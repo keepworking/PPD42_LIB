@@ -1,7 +1,7 @@
 # PPD42_LIB
 arduino PPD42_LIB
 
-아두이노 전용 PPD42 GROVE DUST 센서의 라이블러리 입니다.
+아두이노 전용 PPD42 GROVE DUST 센서의 라이브러리 입니다.
 
 ```cpp
 #include"ppd42.h"
