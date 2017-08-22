@@ -6,7 +6,15 @@ void setup() {
   Serial.begin(9600);
 }
 
+
+double per = 0;
+double conc = 0;
+double ugm3 = 0;
+
 void loop() {
-  Serial.print(dust.read());
-  Serial.println("%");
+  per = dust.read();
+  conc = per2pcs(per);
+  ugm3 = pcs2ugm3(conc);
+  Serial.print(ugm3);
+  Serial.println("ug/m^3");
 }
